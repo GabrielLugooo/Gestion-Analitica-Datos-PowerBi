@@ -1,6 +1,6 @@
-# Proyecto Integrador de Gestion Analitica de Datos con PowerBI
+# Informe Final de Gestion Analitica de Datos con PowerBI
 
-**Tarea:** Gestión Analítica de Datos  
+**Caso:** Gestión Analítica de Datos  
 **Período analizado:** 2011–2012  
 **Herramientas:** Microsoft Power BI Desktop
 

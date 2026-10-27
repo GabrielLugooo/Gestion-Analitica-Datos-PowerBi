@@ -1,4 +1,4 @@
-# Proyecto integrador de Gestión Analítica de Datos con PowerBi
+# Gestión Analítica de Datos con PowerBi
 
 El proyecto transforma los datos de ventas minoristas de 2011 y 2012 en un modelo analítico verificable y un informe interactivo con KPIs, segmentadores y hallazgos descriptivos.
 
@@ -12,7 +12,7 @@ El proyecto transforma los datos de ventas minoristas de 2011 y 2012 en un model
 
 ## Abrir el proyecto
 
-Abrir `PowerBI/PI_GAD_PowerBI.pbix` con Power BI Desktop. El modelo contiene los datos importados. Para actualizar desde los CSV del repositorio en otro equipo, modificar los orígenes de las consultas de Power Query para apuntar a `Datos/raw/`.
+Abrir `powerbi/PI_GAD_PowerBI.pbix` con Power BI Desktop. El modelo contiene los datos importados. Para actualizar desde los CSV del repositorio en otro equipo, modificar los orígenes de las consultas de Power Query para apuntar a `datos/raw/`.
 
 ## Resultados validados
 
