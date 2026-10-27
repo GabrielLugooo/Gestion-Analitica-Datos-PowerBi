@@ -1,9 +1,8 @@
-# Informe final del Proyecto Integrador de Henry en Power BI
+# Proyecto Integrador de Gestion Analitica de Datos con PowerBI
 
-**Estudiante:** Gabriel Lugo  
-**Curso:** Gestión Analítica de Datos  
+**Tarea:** Gestión Analítica de Datos  
 **Período analizado:** 2011–2012  
-**Herramienta:** Microsoft Power BI Desktop
+**Herramientas:** Microsoft Power BI Desktop
 
 ## Resumen ejecutivo
 
@@ -66,12 +65,12 @@ erDiagram
     features ||--o{ sales : StoreWeekKey
 ```
 
-| Lado uno | Clave | Lado muchos | Clave |
-|---|---|---|---|
-| `stores` | `Store` | `sales` | `Store` |
-| `location` | `Location` | `sales` | `Location` |
-| `Calendario` | `Date` | `sales` | `Date` |
-| `features` | `StoreWeekKey` | `sales` | `StoreWeekKey` |
+| Lado uno     | Clave          | Lado muchos | Clave          |
+| ------------ | -------------- | ----------- | -------------- |
+| `stores`     | `Store`        | `sales`     | `Store`        |
+| `location`   | `Location`     | `sales`     | `Location`     |
+| `Calendario` | `Date`         | `sales`     | `Date`         |
+| `features`   | `StoreWeekKey` | `sales`     | `StoreWeekKey` |
 
 Todas las relaciones están activas y tienen cardinalidad 1 a muchos. La comprobación de la relación semanal dio cero filas de ventas sin correspondencia en características.
 
@@ -85,29 +84,29 @@ Todas las relaciones están activas y tienen cardinalidad 1 a muchos. La comprob
 - **Tipo de día:** etiqueta derivada `Festivo` o `No festivo` a partir de `IsHoliday`.
 - **Año:** columna de calendario creada con `YEAR(Calendario[Date])`.
 
-Las medidas DAX completas están en `MEDIDAS_DAX.md`.
+Las medidas DAX completas están en `Medidas_DAX.md`.
 
 ## Resultados e insights
 
 ### Vista general de 2011–2012
 
-| Indicador | Resultado |
-|---|---:|
-| Ventas totales | 4.448.332.866,70 |
-| Venta máxima por fila semanal | 649.770,18 |
-| Venta mínima por fila semanal | -3.924,00 |
-| Ventas 2011 | 2.448.200.007,35 |
+| Indicador                      |        Resultado |
+| ------------------------------ | ---------------: |
+| Ventas totales                 | 4.448.332.866,70 |
+| Venta máxima por fila semanal  |       649.770,18 |
+| Venta mínima por fila semanal  |        -3.924,00 |
+| Ventas 2011                    | 2.448.200.007,35 |
 | Ventas 2012 (hasta 26/10/2012) | 2.000.132.859,35 |
 
 La venta mínima negativa está en la fuente y se conservó; no se asumió que fuera un error sin una regla de negocio que lo justifique.
 
 ### Ventas por tipo de tienda y ubicación
 
-| Tipo de tienda | Ventas |
-|---|---:|
-| A | 2.865.584.304,61 |
-| B | 1.310.723.000,91 |
-| C | 272.025.561,18 |
+| Tipo de tienda |           Ventas |
+| -------------- | ---------------: |
+| A              | 2.865.584.304,61 |
+| B              | 1.310.723.000,91 |
+| C              |   272.025.561,18 |
 
 Las tiendas tipo A concentran el mayor volumen, seguidas por B y C. Por ubicación, US-NY presenta el mayor total (887.532.917,32) y US-MD el menor (69.480.974,20) en el período completo. Estos resultados comparan importes acumulados; no se normalizaron por cantidad de tiendas ni por tamaño.
 
@@ -117,12 +116,12 @@ En el período completo, el anillo muestra aproximadamente 6,86 % de ventas en s
 
 ### 2012 con Temperature > 20
 
-| Indicador | Resultado |
-|---|---:|
-| Ventas 2012 sin filtro de temperatura | 2.000.132.859,35 |
-| Ventas 2012 con Temperature > 20 | 1.994.956.776,32 |
-| Venta máxima con Temperature > 20 | 233.140,32 |
-| Proporción festiva dentro de ventas filtradas | 4,90 % |
+| Indicador                                     |        Resultado |
+| --------------------------------------------- | ---------------: |
+| Ventas 2012 sin filtro de temperatura         | 2.000.132.859,35 |
+| Ventas 2012 con Temperature > 20              | 1.994.956.776,32 |
+| Venta máxima con Temperature > 20             |       233.140,32 |
+| Proporción festiva dentro de ventas filtradas |           4,90 % |
 
 El contexto de temperatura filtra ventas a través de la relación por tienda y semana. Se validó que el total filtrado cambia al elegir tienda y que la selección de año, semana, ubicación, tipo de tienda y tipo de día interactúa con el informe.
 
@@ -134,15 +133,15 @@ El contexto de temperatura filtra ventas a través de la relación por tienda y 
 
 ## Controles de calidad realizados
 
-| Tabla/control | Resultado esperado | Resultado validado |
-|---|---:|---:|
-| `sales` | 280.891 filas | 280.891 |
-| `features` | 4.680 filas | 4.680 |
-| `stores` | 45 filas | 45 |
-| `location` | 12 filas | 12 |
-| Claves de `features[StoreWeekKey]` | Únicas | Únicas; relación 1:* activa |
-| Ventas sin clave correspondiente en `features` | 0 | 0 |
-| Filtros de fecha, tienda, ubicación y contexto de temperatura | Cambian los resultados | Probados en Power BI |
+| Tabla/control                                                 |     Resultado esperado |           Resultado validado |
+| ------------------------------------------------------------- | ---------------------: | ---------------------------: |
+| `sales`                                                       |          280.891 filas |                      280.891 |
+| `features`                                                    |            4.680 filas |                        4.680 |
+| `stores`                                                      |               45 filas |                           45 |
+| `location`                                                    |               12 filas |                           12 |
+| Claves de `features[StoreWeekKey]`                            |                 Únicas | Únicas; relación 1:\* activa |
+| Ventas sin clave correspondiente en `features`                |                      0 |                            0 |
+| Filtros de fecha, tienda, ubicación y contexto de temperatura | Cambian los resultados |         Probados en Power BI |
 
 ## Conclusiones y limitaciones
 
@@ -152,7 +151,8 @@ La comparación anual no cubre doce meses completos para 2012: las ventas dispon
 
 ## Archivos de entrega
 
-- `PI_Henry_PowerBI.pbix`: informe interactivo.
-- `Datawarehouse_inicial.xlsx`: libro de datos inicial solicitado por Henry.
-- `Datos/`: CSV originales utilizados como fuentes.
-- Este informe y `MEDIDAS_DAX.md`: documentación del proceso y fórmulas.
+- `powerbi/PI_GAD_PowerBI.pbix`: archivo principal de Power BI con tres páginas: Portada, Reporte General y Ventas 2012 - Temperatura > 20.
+- `datos/Datawarehouse.xlsx`: libro original de referencia del proyecto.
+- `datos/raw/`: CSV originales de ventas, características semanales y tiendas.
+- `docs/Informe_Final.md`: informe detallado de limpieza, modelo, medidas, hallazgos, validaciones y limitaciones.
+- `docs/Medidas_DAX.md`: fórmulas DAX implementadas.
