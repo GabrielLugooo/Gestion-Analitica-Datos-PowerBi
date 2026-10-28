@@ -1,32 +1,32 @@
 <img align="center" src="https://i.imgur.com/gJzyKft.png" alt="gabriellugo" />
 
-# GESTION ANALITICA DE DATOS CON POWER BI
+# ANALYTICAL DATA MANAGEMENT WITH POWER BI
 
-<a href="https://github.com/GabrielLugooo/Gestion-Analitica-Datos-PowerBi/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Analitica%20Datos%20PowerBi%20Español-000000" alt="Analitica Datos PowerBi Español" /></a>
-<a href="https://github.com/GabrielLugooo/Gestion-Analitica-Datos-PowerBi/blob/main/README.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Analitica%20Datos%20PowerBi%20Inglés-green" alt="Analitica Datos PowerBi Inglés" /></a>
+<a href="https://github.com/GabrielLugooo/Gestion-Analitica-Datos-PowerBi/blob/main/README.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Analytical%20Data%20PowerBi%20English-000000" alt="Analytical Data Management PowerBi English" /></a>
+<a href="https://github.com/GabrielLugooo/Gestion-Analitica-Datos-PowerBi/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Analytical%20Data%20PowerBi%20Spanish-green" alt="Analytical Data Management PowerBi Spanish" /></a>
 
-## Objetivos
+## Objectives
 
-El proyecto transforma los datos de ventas minoristas de 2011 y 2012 en un modelo analítico verificable y un informe interactivo con KPIs, segmentadores y hallazgos descriptivos.
+The project transforms retail sales data from 2011 and 2012 into a verifiable analytical model and an interactive report featuring KPIs, slicers, and descriptive insights.
 
-## Habilidades Aprendidas
+## Skills Acquired
 
-- Importación e integración de datos desde archivos `.csv` y `.xlsx.`
-- Limpieza, transformación y tipado de datos con `Power Query`.
-- Aplicación de configuraciones regionales para interpretar fechas y valores numéricos correctamente.
-- Tratamiento de valores faltantes y conservación de los datos originales para mantener su trazabilidad.
-- Creación de columnas derivadas para normalizar variables con escalas inconsistentes.
-- Diseño de un modelo de datos analítico con tablas de hechos y dimensiones.
-- Creación de claves compuestas para relacionar ventas con las características semanales de cada tienda.
-- Configuración de relaciones uno a muchos y validación de la integridad de los datos.
-- Creación de una tabla calendario para analizar las ventas a lo largo del tiempo.
-- Desarrollo de medidas y columnas calculadas con `DAX`.
-- Cálculo de indicadores de ventas totales, máximas, mínimas, promedios y ventas por tipo de día.
-- Análisis de ventas por tienda, tipo de tienda, ubicación, período, feriados y temperatura.
-- Diseño de informes interactivos con gráficos, tarjetas, segmentadores y navegación entre páginas.
-- Documentación de resultados, controles de calidad, hallazgos y limitaciones del análisis.
+- Importing and integrating data from `.csv` and `.xlsx` files.
+- Cleaning, transforming, and assigning data types using `Power Query`.
+- Applying regional settings to correctly interpret dates and numerical values.
+- Handling missing values ​​while preserving original data to ensure traceability.
+- Creating derived columns to normalize variables with inconsistent scales.
+- Designing an analytical data model with fact and dimension tables.
+- Creating composite keys to link sales data with the weekly characteristics of each store.
+- Configuring one-to-many relationships and validating data integrity.
+- Creating a calendar table to analyze sales over time.
+- Developing measures and calculated columns using `DAX`.
+- Calculating sales metrics, including totals, maximums, minimums, averages, and sales by day type.
+- Analyzing sales by store, store type, location, time period, holidays, and temperature.
+- Designing interactive reports with charts, cards, slicers, and cross-page navigation.
+- Documenting results, quality controls, key findings, and the limitations of the analysis.
 
-## Herramientas Usadas
+## Tools Used
 
 ![Static Badge](https://img.shields.io/badge/Power%20BI-000000?logo=powerbi&logoSize=auto)
 ![Static Badge](https://img.shields.io/badge/Power%20Query-000000?logo=microsoft&logoSize=auto)
@@ -36,52 +36,52 @@ El proyecto transforma los datos de ventas minoristas de 2011 y 2012 en un model
 ![Static Badge](https://img.shields.io/badge/Git-000000?logo=git&logoSize=auto)
 ![Static Badge](https://img.shields.io/badge/GitHub-000000?logo=github&logoSize=auto)
 
-- `Power BI Desktop` (modelado de datos, medidas y creación de informes interactivos)
-- `Power Query` (extracción, limpieza y transformación de datos)
-- `DAX` (creación de medidas, columnas calculadas y validaciones)
-- `Microsoft Excel` (archivo de referencia del proyecto)
-- Archivos `.csv` (fuentes de ventas, características semanales y tiendas)
-- `Git` y `GitHub` (control de versiones, documentación y publicación del proyecto)
+- `Power BI Desktop` (data modeling, measures, and creation of interactive reports)
+- `Power Query` (data extraction, cleaning, and transformation)
+- `DAX` (creation of measures, calculated columns, and validations)
+- `Microsoft Excel` (project reference file)
+- `.csv` files (sources for sales, weekly features, and stores)
+- `Git` and `GitHub` (version control, documentation, and project publishing)
 
-## Proyecto
+## Project
 
-### Vista Previa
+### Preview
 
 <img align="center" src="https://i.imgur.com/PxzSyIP.jpeg" alt="PowerBi_Analytics_01" />
 <img align="center" src="https://i.imgur.com/9QTQ4Db.jpeg" alt="PowerBi_Analytics_02" />
 <img align="center" src="https://i.imgur.com/wXW8nY2.jpeg" alt="PowerBi_Analytics_03" />
 <img align="center" src="https://i.imgur.com/3hzTJi2.jpeg" alt="PowerBi_Analytics_04" />
 
-### Contenidos
+### Contents
 
-- `powerbi/PI_GAD_PowerBI.pbix`: archivo principal de Power BI con tres páginas: Portada, Reporte General y Ventas 2012 - Temperatura > 20.
-- `datos/Datawarehouse.xlsx`: libro original de referencia del proyecto.
-- `datos/raw/`: CSV originales de ventas, características semanales y tiendas.
-- `docs/Informe_Final.md`: informe detallado de limpieza, modelo, medidas, hallazgos, validaciones y limitaciones.
-- `docs/Medidas_DAX.md`: fórmulas DAX implementadas.
+- `powerbi/PI_GAD_PowerBI.pbix`: Main Power BI file containing three pages: Cover, General Report, and 2012 Sales – Temperature > 20.
+- `datos/Datawarehouse.xlsx`: Original reference workbook for the project.
+- `datos/raw/`: Original CSV files containing sales, weekly features, and store data.
+- `docs/Informe_Final.md`: Detailed report covering data cleaning, the data model, measures, findings, validations, and limitations.
+- `docs/Medidas_DAX.md`: Implemented DAX formulas.
 
-### Abrir el proyecto
+### Opening the Project
 
-Abrir `powerbi/PI_GAD_PowerBI.pbix` con Power BI Desktop. El modelo contiene los datos importados. Para actualizar desde los CSV del repositorio en otro equipo, modificar los orígenes de las consultas de Power Query para apuntar a `datos/raw/`.
+Open `powerbi/PI_GAD_PowerBI.pbix` using Power BI Desktop. The model includes the imported data. To refresh the data from the repository's CSV files on a different machine, update the Power Query data source paths to point to the `datos/raw/` directory.
 
-### Resultados validados
+### Validated Results
 
-- Filas: `sales` 280.891; `features` 4.680; `stores` 45; `location` 12.
-- Claves de `features[StoreWeekKey]` únicas y cero filas de ventas sin correspondencia en `features`.
-- Ventas totales 2011–2012: 4.448.332.866,70.
-- Ventas 2012 con `Temperature > 20`: 1.994.956.776,32.
+- Row counts: `sales` 280,891; `features` 4,680; `stores` 45; `location` 12.
+- Unique `features[StoreWeekKey]` values; zero sales rows without a corresponding match in the `features` table.
+- Total sales (2011–2012): 4,448,332,866.70.
+- 2012 sales where `Temperature > 20`: 1,994,956,776.32.
 
-## Limitaciones
+## Limitations
 
-Las columnas ajustadas de combustible y desempleo son reglas documentadas para valores con escala inconsistente; no se presentan como correcciones oficiales. Se conservan los campos originales.
+The adjusted fuel and unemployment columns are based on documented rules for values ​​with inconsistent scales; they are not presented as official corrections. The original fields have been retained.
 
-El umbral de temperatura usa la escala de la fuente, cuya unidad no fue confirmada.
+The temperature threshold is based on the scale provided in the source data; the specific unit of measurement has not been confirmed.
 
-El total de 2012 cubre ventas solo hasta el 26 de octubre, por lo que no representa un año calendario completo.
+The 2012 total covers sales only up to October 26th; therefore, it does not represent a full calendar year.
 
 ---
 
-<h3 align="left">Conecta Conmigo</h3>
+<h3 align="left">Conect With Me</h3>
 
 <p align="left">
 <a href="https://www.youtube.com/@gabriellugooo" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.icons8.com/?size=50&id=55200&format=png" alt="@gabriellugooo" height="40" width="40" /></a>
@@ -95,9 +95,8 @@ El total de 2012 cubre ventas solo hasta el 26 de octubre, por lo que no represe
 </p>
 
 <p align="left">
-<a href="https://github.com/GabrielLugooo/GabrielLugooo/blob/main/Readme%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Versión%20Español-000000" alt="Versión Español" /></a>
-<a href="https://github.com/GabrielLugooo/GabrielLugooo/blob/main/README.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Versión%20Inglés-Green" alt="Versión Inglés" /></a>
-
+<a href="https://github.com/GabrielLugooo/GabrielLugooo/blob/main/Readme.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/English%20Version-000000" alt="English Version" /></a>
+<a href="https://github.com/GabrielLugooo/GabrielLugooo/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Spanish%20Version-Green" alt="Spanish Version" /></a>
 </p>
 
 <a href="https://linktr.ee/gabriellugooo" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Créditos-Gabriel%20Lugo-green" alt="Créditos" /></a>
